@@ -1,0 +1,19 @@
+# RDD2022 dataset config for Ultralytics YOLO.
+#
+# This is the TEMPLATE for the raw-RDD2022 path (prepare_data.py output).
+# If you're using a pre-converted YOLO-format dataset such as the Kaggle
+# mirror "rdd2022-yolo-crackscan-v2", don't hand-edit this file — run
+# scripts/adapt_kaggle_dataset.py instead, which regenerates this file with
+# the dataset's real folder layout and real class list.
+
+path: /path/to/rdd2022_yolo_dataset   # <-- CHANGE THIS
+train: images/train
+val: images/val
+test: images/test
+
+nc: 4
+names:
+  0: D00_longitudinal_crack
+  1: D10_transverse_crack
+  2: D20_alligator_crack
+  3: D40_pothole
