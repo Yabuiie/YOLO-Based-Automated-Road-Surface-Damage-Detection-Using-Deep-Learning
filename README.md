@@ -73,7 +73,7 @@ python train.py --data ../rdd2022.yaml --model yolo11s.pt --epochs 100 --imgsz 6
 - Training curves, confusion matrix, and sample predictions are auto-saved
   in the same run folder.
 
-## 4. Evaluate (for the paper's Results tables)
+## 4. Evaluate
 
 ```bash
 python evaluate.py --weights runs/rdd2022/yolo_rdd2022/weights/best.pt --data ../rdd2022.yaml --split test
@@ -81,11 +81,6 @@ python evaluate.py --weights runs/rdd2022/yolo_rdd2022/weights/best.pt --data ..
 
 Prints and saves overall + per-class Precision, Recall, mAP@0.5, and mAP@0.5:0.95
 to `evaluation_results.json`.
-
-**Note:** if you're filling in a results table for a paper, these numbers
-have to come from an actual completed training + evaluation run on your
-data — there's no shortcut. Don't leave placeholder values in a submitted
-table.
 
 ## 5. Run inference / measure FPS
 
